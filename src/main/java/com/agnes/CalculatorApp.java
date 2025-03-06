@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CalculatorApp {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner (System.in);
+        Scanner scanner = new Scanner(System.in);
         while (true) {
             //i wish to display the menu for the operations so the users can know the different operations they can perform with the calculator.
             System.out.println(" 1. Addition");
@@ -17,7 +17,7 @@ public class CalculatorApp {
             int choice = scanner.nextInt();
 
             // i needed to validate the int choice because testing the calculator, i realised there was an inout issue and users might get wrong results.
-            if (choice <1 || choice > 5) {
+            if (choice < 1 || choice > 5) {
                 System.out.println("Invalid number. Please enter a number between 1 and 4");
                 continue;
             }
@@ -36,15 +36,15 @@ public class CalculatorApp {
             double result = 0;
             switch (choice) {
                 case 1:
-                    result = number1 +  number2;
+                    result = number1 + number2;
                     System.out.println("Results: " + result);
                     break;
                 case 2:
-                    result = number1 -  number2;
+                    result = number1 - number2;
                     System.out.println("Results: " + result);
                     break;
                 case 3:
-                    result = number1 *  number2;
+                    result = number1 * number2;
                     System.out.println("Results: " + result);
                     break;
                 case 4:

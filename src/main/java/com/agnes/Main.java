@@ -21,7 +21,7 @@ public class Main {
             int choice = scanner.nextInt();
 
             // i needed to validate the int choice because testing the calculator, i realised there was an inout issue and users might get wrong results.
-            if (choice <1 || choice > 5) {
+            if (choice < 1 || choice > 5) {
                 System.out.println("Invalid number. Please enter a number between 1 and 4");
                 continue;
             }
@@ -40,15 +40,15 @@ public class Main {
             double result = 0;
             switch (choice) {
                 case 1:
-                    result = number1 +  number2;
+                    result = number1 + number2;
                     System.out.println("Results: " + result);
                     break;
                 case 2:
-                    result = number1 -  number2;
+                    result = number1 - number2;
                     System.out.println("Results: " + result);
                     break;
                 case 3:
-                    result = number1 *  number2;
+                    result = number1 * number2;
                     System.out.println("Results: " + result);
                     break;
                 case 4:
